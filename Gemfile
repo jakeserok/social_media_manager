@@ -56,3 +56,5 @@ gem 'twitter', '~> 7.0'
 gem 'better_errors', '~> 2.9'
 
 gem 'rubocop', '~> 1.18'
+
+gem "rename", "~> 1.0"

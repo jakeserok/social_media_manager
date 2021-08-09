@@ -1,5 +1,5 @@
 {
-  "name": "tweet-scheduler",
+  "name":"social_media_manager",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
