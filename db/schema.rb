@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2021_08_10_234052) do
     t.string "uid"
     t.string "name"
     t.string "avatar"
+    t.string "provider"
   end
 
   add_foreign_key "tweets", "twitter_accounts"
