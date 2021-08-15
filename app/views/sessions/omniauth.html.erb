@@ -1,0 +1,13 @@
+<h1>Auth info</h1>
+
+<div>
+  <% if Current.user %>
+    <span>Signed in as <strong><%= Current.user.name %></strong>!</span>
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", method: :post %>
+  <% end %>
+</div>
+
+
+<% response.body %>
