@@ -58,3 +58,9 @@ gem 'better_errors', '~> 2.9'
 gem 'rubocop', '~> 1.18'
 
 gem "rename", "~> 1.0"
+
+gem "omniauth-google-oauth2", "~> 1.0"
+
+gem "omniauth", "~> 2.0"
+
+gem "binding_of_caller", "~> 1.0"
