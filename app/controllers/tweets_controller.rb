@@ -4,6 +4,12 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = Current.user.tweets
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "tweets", template: "tweets/posts.html.erb"
+      end
+    end
   end
 
   def new

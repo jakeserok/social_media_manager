@@ -3,6 +3,7 @@
 
   <% if Current.user.twitter_accounts.any? %>
     <%= link_to "Schedule a Tweet", new_tweet_path, class: "btn btn-primary" %>
+    <%= link_to "Generate PDF", tweets_path(format: :pdf), class: "btn btn-primary" %>
   <% end %>
 </div>
 
