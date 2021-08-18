@@ -18,9 +18,9 @@ class SessionsController < ApplicationController
   end
 
   def omniauth
-    Rails.logger.info auth
+    # Rails.logger.info auth
 
-    User.from_omniauth(request.env['omniauth.auth'])
+    User.from_omniauth(auth)
 
     user = User.find_by(email: auth.info.email)
 

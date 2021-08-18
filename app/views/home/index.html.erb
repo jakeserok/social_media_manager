@@ -1,3 +1,9 @@
 <div class="d-flex align-items-center justify-content-center">
   <h1>Welcome to the Tweet Scheduler!</h1>
 </div>
+
+<div>
+  <% unless Current.user %>
+    <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in", method: :post %>
+  <% end %>
+</div>
