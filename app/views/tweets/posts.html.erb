@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <head>
   <meta charset='utf-8' />
-    <%= wicked_pdf_stylesheet_link_tag "pdf" -%>
+    <%= wicked_pdf_stylesheet_link_tag "application" -%>
     <%= wicked_pdf_javascript_include_tag "number_pages" %>
 </head>
 <body>
   <div class="d-flex justify-content-between align-items-center">
     <h1>Tweets</h1>
 
-  <%= render @tweets %>
+    <div class="pdf_body">
+      <%= render @tweets %>
+    </div>
+  </div>
 </body>
 </html>
