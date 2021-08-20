@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by(email: params[:email])
+    user = User.find_by(provider: nil, email: params[:email])
     if user.present? && user.authenticate(params[:password])
       session[:user_id] = user.id
       redirect_to root_path, notice: 'Logged in successfully'
@@ -22,9 +22,9 @@ class SessionsController < ApplicationController
 
     User.from_omniauth(auth)
 
-    user = User.find_by(email: auth.info.email)
+    user = User.find_by(provider: 'google_oauth2', email: auth.info.email)
 
-    if user.provider == 'google_oauth2'
+    if user.present?
       session[:user_id] = user.id
       flash[:notice] = "Successfully logged in."
       redirect_to root_path
