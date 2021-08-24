@@ -21,3 +21,32 @@
  .bold {
    font-weight: bold;
  }
+
+ @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+
+.cont{
+  font-family: 'Besley', serif;
+  overflow: hidden;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.digitalClock{
+  width: fit-content;
+  padding: 5px;
+  border-radius: 50%;
+  color: black;
+  background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+}
+
+.digitalClock h1{
+  display: inline-block;
+  margin: 0 2px;
+  font-weight: bold;
+  font-size: 1rem;
+}
