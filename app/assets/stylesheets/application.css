@@ -22,31 +22,16 @@
    font-weight: bold;
  }
 
- @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
-
 .cont{
-  font-family: 'Besley', serif;
   overflow: hidden;
-  width: 95%;
+  width: 100%;
   margin: auto;
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
+  flex-direction: row;
 }
 
-.digitalClock{
-  width: fit-content;
-  padding: 5px;
-  border-radius: 50%;
-  color: black;
-  background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
-}
-
-.digitalClock h1{
+.btn h1{
   display: inline-block;
   margin: 0 2px;
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
