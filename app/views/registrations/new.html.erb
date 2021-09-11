@@ -18,3 +18,10 @@
     <%= form.submit "Sign Up", class: "btn btn-primary"%>
   </div>
 <% end %>
+
+<div>
+  <p class="bold">Or</p>
+  <%= link_to "/auth/google_oauth2", id: "sign_in", method: :post do %>
+    <%= image_tag "btn_google_signin_dark_pressed_web" %>
+  <% end %>
+</div>
